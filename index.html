@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Calcule a gorjeta</title>
+</head>
+<body>
+   <div class="container">
+      <section>
+         <div class="wrapper">
+            <label for="bill" class="lbl">
+               Conta do cliente
+            </label>
+            <div class="input-box">
+               <span>$</span>
+               <input type="number" value="0.00" id="bill" class="val">
+            </div>
+         </div>
+         <div class="wrapper">
+            <span class="lbl">Gorjeta do garçom(a)</span>
+            <span id="tip-amount" class="val">
+               R$0
+            </span>
+         </div>
+
+         <div class="wrapper">
+            <span class="lbl">Valor total</span>
+            <span id="total-amount" class="val">R$</span>
+         </div>
+      </section>
+      <section>
+         <div class="wrapper">
+            <label for="tip" class="lbl">
+               Porcentagem %
+            </label>
+            <span id="tip-percent" class="val">
+               0
+            </span>
+         </div>
+         <input type="range" min="1" id="tip" value="15">
+         <div class="wrapper">
+            <label for="no-of-people" class="lbl">
+               Quantidade de cliente
+            </label>
+            <span id="split-num" class="val">
+               R$0
+            </span>
+         </div>
+         <input type="range" min="1" max="15" id="no-of-people" value="1">
+      </section>
+      <section>
+         <div class="wrapper">
+            <span class="lbl">
+               Gorjeta por pessoas
+            </span>
+            <span id="tip-per-person" class="val">
+               R$0
+            </span>
+         </div>
+         <div class="wrapper">
+            <span class="lbl">
+               Total por pessoa
+            </span>
+            <span id="total-per-person" class="val">
+               R$0
+            </span>
+         </div>
+      </section>
+   </div>   
+   <script src="js.js"></script>
+</body>
+</html>
